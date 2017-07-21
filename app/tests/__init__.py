@@ -14,23 +14,10 @@ class BaseTestCase(TestCase):
     WTF_CSRF_ENABLED = False
     WTF_CSRF_SECRET_KEY = "somethingimpossibletoguess"
     SECRET_KEY = 'This string will be replaced with a proper key in production.'
-    TOKEN_EXPIRATION_SECONDS = 600
-    BASE_CERN_OAUTH2_API_URL = "https://oauthresource.web.cern.ch"
-    SENTRY_ENABLED = False
-    SENTRY_DSN = "<ADD SENTRY DSN STRING>"
-    SSO_LOGOUT_URL = "/logout"
     APPLICATION_ROOT = "/"
     API_URL_PREFIX = "/api"
 
-    GOOGLE_CLIENT_ID = ""
-    GOOGLE_CLIENT_SECRET = ""
-    GOOGLE_CLIENT_SCOPE = ["profile", "email"]
-
-    FACEBOOK_CLIENT_ID = ""
-    FACEBOOK_CLIENT_SECRET = ""
-
     IS_LOCAL_INSTALLATION = True
-
 
     # available languages
     LANGUAGES = {
